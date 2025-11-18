@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Viber - Get in touch with our team">
+  <title>Contact - Viber</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">VIBER</div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">☰</label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html" class="btn-primary">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="contact-container">
+    <!-- Left Side - Contact Form -->
+    <section class="contact-form-section">
+      <h2>Contact us</h2>
+      <p class="subheading">Have questions? We're here to help.</p>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Your full name"
+            required
+            aria-required="true"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="your.email@example.com"
+            required
+            aria-required="true"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select 
+            id="subject" 
+            name="subject"
+            required
+            aria-required="true"
+          >
+            <option value="">Select a subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Technical Support</option>
+            <option value="billing">Billing Question</option>
+            <option value="feature">Feature Request</option>
+            <option value="bug">Report a Bug</option>
+            <option value="partnership">Partnership</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            placeholder="Tell us how we can help..."
+            required
+            aria-required="true"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-full">Send</button>
+      </form>
+    </section>
+
+    <!-- Right Side - Contact Info -->
+    <aside class="contact-info-section">
+      <div class="info-card">
+        <h3>Get in Touch</h3>
+        <p><strong>Email:</strong> <a href="mailto:support@viber.dev">support@viber.dev</a></p>
+        <p><strong>Twitter:</strong> <a href="https://twitter.com/ViberDev" target="_blank" rel="noopener">@ViberDev</a></p>
+        <p><strong>Discord:</strong> <a href="https://discord.gg/viber" target="_blank" rel="noopener">discord.gg/viber</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/viber" target="_blank" rel="noopener">github.com/viber</a></p>
+      </div>
+
+      <div class="info-card">
+        <h3>Office</h3>
+        <p>Bengaluru Tech Hub</p>
+        <p>Koramangala, Bengaluru</p>
+        <p>Karnataka 560095, India</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Support Hours</h3>
+        <p><strong>Monday - Friday:</strong> 9 AM - 6 PM IST</p>
+        <p><strong>Weekend:</strong> Limited support</p>
+        <p><strong>Response time:</strong> &lt; 24 hours</p>
+      </div>
+
+      <div class="info-card">
+        <h3>FAQ</h3>
+        <p>Check out our <a href="#faq">FAQ section</a> for quick answers</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">VIBER</div>
+      <div class="footer-social">
+        <div class="social-icons">
+          <a href="#" aria-label="Twitter">
+            <img src="images/YouTube Logo.png" alt="Twitter" width="24" height="24">
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img src="images/Instagram Logo.png" alt="Instagram" width="24" height="24">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="images/Facebook Logo.png" alt="Facebook" width="24" height="24">
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img src="images/Discord Icon 94.png" alt="YouTube" width="24" height="24">
+          </a>
+          <a href="#" aria-label="Discord">
+            <img src="images/git.png" alt="Discord" width="24" height="24">
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2025 Viber Inc. All rights reserved.<br>
+        VIBER and any associated logos are trademarks, service marks, and/or registered trademarks of Viber Inc.
+      </div>
+      <div class="footer-links">
+        <a href="#privacy">PRIVACY NOTICE</a>
+        <a href="#terms">TERMS OF SERVICE</a>
+        <a href="#cookie">COOKIE PREFERENCES</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

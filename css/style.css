@@ -1,0 +1,548 @@
+/* VIBER - Complete stylesheet */
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.5;
+  color:#ffffff;
+  background-color:#0a0e17;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container { max-width:1400px; margin:0 auto; padding:0 20px; }
+main { padding-top:72px; }
+
+/* Typography bana rahe hain */
+h1{ font-size:2.5rem; line-height:1.05; margin-bottom:0.6rem; font-weight:700; }
+h2{ font-size:1.8rem; margin-bottom:0.6rem; font-weight:700; }
+h3{ font-size:1.25rem; margin-bottom:0.5rem; font-weight:600; }
+p{ margin-bottom:1rem; color:#b9bbbe; }
+
+a{ color:#1abc9c; text-decoration:none; transition: color 0.3s; }
+a:hover{ color:#16a085; }
+
+/* Header - transparent rakha hai starting mein */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:999;
+  background: rgba(10,14,23,0.25);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  padding:14px 0;
+  border-bottom: none;
+  transition: background 0.3s, border-color 0.3s, backdrop-filter 0.3s;
+}
+
+header.scrolled {
+  background: rgba(21,25,32,0.94);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.header-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:0 20px;
+  max-width:1400px;
+  margin:0 auto;
+}
+.logo{
+  font-weight:800;
+  color:#1abc9c;
+  letter-spacing:0.6px;
+  font-size:1.3rem;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:24px;
+  align-items:center;
+}
+nav ul li a{
+  color:#f0f6f7;
+  font-size:0.95rem;
+  font-weight:500;
+  transition: color 0.3s;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+nav ul li a:hover{
+  color:#1abc9c;
+}
+.btn-primary{
+  background:#1abc9c;
+  color:#0a0e17;
+  padding:10px 20px;
+  border-radius:8px;
+  font-weight:700;
+  border:none;
+  cursor:pointer;
+  display:inline-block;
+  transition: all 0.3s;
+}
+.btn-primary:hover{
+  background:#16a085;
+  box-shadow: 0 4px 12px rgba(26, 188, 156, 0.3);
+}
+
+.menu-toggle{ display:none; }
+.menu-icon{ display:none; color:#fff; font-size:1.4rem; cursor:pointer; }
+
+/* Hero section jo landing page pe dikhega */
+.hero-section{
+  position:relative;
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 20px 80px;
+  background-color:#0a0e17;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  overflow:hidden;
+}
+
+.hero-section::before{
+  content:"";
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(10,14,23,0.7);
+  z-index:1;
+}
+.hero-section > * {
+  position:relative;
+  z-index:2;
+}
+
+.hero-bg {
+  background-image: url('../images/image.png');
+}
+
+.hero-section h1{
+  font-size:3.5rem;
+  color:#ffffff;
+  margin-bottom:1rem;
+  max-width:900px;
+}
+.hero-section .subtitle{
+  font-size:1.2rem;
+  color:#c2c7cb;
+  max-width:760px;
+  margin:0 auto 2rem;
+  line-height:1.6;
+}
+.hero-buttons{
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.btn-download{
+  background:#ffffff;
+  color:#0a0e17;
+  padding:16px 32px;
+  border-radius:30px;
+  font-weight:700;
+  font-size:1rem;
+  box-shadow:0 6px 18px rgba(0,0,0,0.25);
+  transition: all 0.3s;
+}
+.btn-download:hover{
+  transform: translateY(-2px);
+  box-shadow:0 8px 24px rgba(0,0,0,0.35);
+}
+.btn-open{
+  background:rgba(255,255,255,0.1);
+  color:#ffffff;
+  padding:16px 32px;
+  border-radius:30px;
+  border:1px solid rgba(255,255,255,0.2);
+  font-weight:700;
+  font-size:1rem;
+  transition: all 0.3s;
+}
+.btn-open:hover{
+  background:rgba(255,255,255,0.15);
+  border-color:#1abc9c;
+}
+
+/* CTA section jisme background image add kar sakte hain */
+.cta-section{
+  position:relative;
+  width:100%;
+  padding:100px 20px;
+  text-align:center;
+  background-color:#151920;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  overflow:hidden;
+}
+.cta-section::before{
+  content:"";
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(10,14,23,0.6);
+  z-index:1;
+}
+.cta-section > * {
+  position:relative;
+  z-index:2;
+}
+.cta-section h2{
+  font-size:2.5rem;
+  color:#ffffff;
+  margin-bottom:30px;
+}
+
+/* Features section - saare features yahan dikhenge */
+.features-section{
+  padding:80px 20px;
+  background:#151920;
+}
+.features-grid{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  gap:60px;
+  grid-template-columns:1fr;
+}
+.feature-item{
+  display:flex;
+  gap:40px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.feature-item.reverse{
+  flex-direction:row-reverse;
+}
+.feature-content{
+  flex:1;
+  min-width:280px;
+}
+.feature-content h2{
+  color:#ffffff;
+  margin-bottom:15px;
+}
+.feature-content p{
+  font-size:1.05rem;
+  line-height:1.7;
+}
+.feature-image{
+  flex:1;
+  min-width:320px;
+  background:#1e2329;
+  border-radius:12px;
+  overflow:hidden;
+  padding:0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+.feature-image img{
+  width:100%;
+  height:auto;
+  min-height:300px;
+  max-height:400px;
+  object-fit:cover;
+  display:block;
+}
+
+/* Login aur signup ke liye form styles */
+.auth-container{
+  min-height:calc(100vh - 200px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:100px 20px 40px;
+}
+.auth-card{
+  background:#151920;
+  border-radius:12px;
+  padding:40px;
+  width:100%;
+  max-width:500px;
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+.auth-card h1{
+  font-size:2rem;
+  margin-bottom:10px;
+  color:#ffffff;
+}
+.subheading{
+  color:#b9bbbe;
+  margin-bottom:30px;
+}
+.form-group{
+  margin-bottom:20px;
+}
+.form-group label{
+  display:block;
+  color:#b9bbbe;
+  font-size:0.9rem;
+  margin-bottom:8px;
+  font-weight:600;
+}
+.form-group input,
+.form-group textarea,
+.form-group select{
+  width:100%;
+  padding:12px 14px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.1);
+  background:#0a0e17;
+  color:#fff;
+  font-size:1rem;
+  transition: all 0.3s;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+  outline:none;
+  border-color:#1abc9c;
+  box-shadow:0 0 0 3px rgba(26,188,156,0.12);
+}
+.form-group textarea{
+  min-height:120px;
+  resize:vertical;
+}
+.checkbox-group{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:20px;
+}
+.checkbox-group input{ width:auto; }
+.btn-full{ width:100%; padding:14px; font-size:1rem; }
+.forgot-password{ text-align:center; margin-top:15px; }
+.auth-footer{ text-align:center; margin-top:20px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08); }
+.auth-footer p{ color:#b9bbbe; }
+
+/* Profile page ke liye styling */
+.profile-header{
+  background:linear-gradient(135deg,#1abc9c 0%,#3498db 100%);
+  padding:100px 20px 40px;
+  text-align:center;
+}
+.profile-avatar-large{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background:#151920;
+  color:#1abc9c;
+  font-size:3rem;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 20px;
+  border:4px solid #ffffff;
+}
+.profile-name{
+  font-size:2.5rem;
+  margin-bottom:10px;
+}
+.profile-bio{
+  font-size:1.1rem;
+  color:#e0e0e0;
+  margin-bottom:5px;
+}
+.profile-meta{
+  color:#d0d0d0;
+  font-size:0.95rem;
+  margin-bottom:5px;
+}
+.profile-actions{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  margin-top:25px;
+}
+.profile-content{
+  max-width:1200px;
+  margin:-60px auto 40px;
+  padding:0 20px;
+  display:flex;
+  gap:30px;
+  align-items:flex-start;
+}
+.profile-left{ width:300px; }
+.profile-right{ flex:1; }
+.stats-card, .badges-card, .activity-card{
+  background:#151920;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:20px;
+}
+.stats-card h3, .badges-card h3, .activity-card h3{
+  color:#ffffff;
+  margin-bottom:15px;
+}
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:15px;
+}
+.stat-item{ text-align:center; }
+.stat-number{ display:block; font-size:2rem; font-weight:700; color:#1abc9c; }
+.stat-label{ display:block; font-size:0.85rem; color:#b9bbbe; }
+.badges-list{ display:flex; flex-direction:column; gap:10px; }
+.badge{
+  background:#1e2329;
+  padding:10px 15px;
+  border-radius:8px;
+  color:#ffffff;
+  font-size:0.9rem;
+}
+.activity-item, .project-item{
+  padding:15px 0;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.activity-item:last-child, .project-item:last-child{ border-bottom:none; }
+.activity-text{ color:#b9bbbe; margin-bottom:5px; }
+.activity-link{ color:#1abc9c; font-weight:600; }
+.skills-list{ display:flex; flex-wrap:wrap; gap:10px; }
+.skill-tag{
+  background:#1e2329;
+  color:#1abc9c;
+  padding:8px 16px;
+  border-radius:20px;
+  font-size:0.9rem;
+  border:1px solid rgba(26,188,156,0.3);
+}
+
+/* Contact page styling */
+.contact-container{
+  max-width:1100px;
+  margin:80px auto 40px;
+  padding:40px 20px;
+  display:flex;
+  gap:40px;
+  align-items:flex-start;
+}
+.contact-form-section{ flex:1; }
+.contact-info-section{ width:320px; }
+.info-card{
+  background:#151920;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:20px;
+}
+.info-card h3{ color:#ffffff; margin-bottom:15px; font-size:1rem; }
+.info-card p{ margin-bottom:10px; color:#b9bbbe; }
+.info-card strong{ color:#ffffff; }
+
+/* About page */
+.mission-section{
+  max-width:900px;
+  margin:40px auto;
+  padding:40px 20px;
+  text-align:center;
+}
+.mission-section h2{ color:#1abc9c; margin-bottom:20px; }
+.tagline{ font-size:1.3rem; color:#1abc9c; margin-bottom:20px; }
+
+/* Footer */
+footer{
+  background:#0a0e17;
+  padding:50px 20px 30px;
+  color:#72767d;
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+.footer-container{
+  max-width:1200px;
+  margin:0 auto;
+  text-align:center;
+}
+.footer-logo{
+  font-size:1.8rem;
+  color:#1abc9c;
+  font-weight:800;
+  margin-bottom:20px;
+}
+.footer-social{ margin-bottom:30px; }
+.social-icons{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  align-items:center;
+}
+.social-icons a{ display:inline-block; transition: all 0.3s; }
+.social-icons a:hover{ transform:translateY(-3px); }
+.social-icons img{ display:block; opacity:0.8; transition: opacity 0.3s; }
+.social-icons a:hover img{ opacity:1; }
+.footer-copyright{ margin-bottom:20px; font-size:0.9rem; line-height:1.6; }
+.footer-links{ display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+.footer-links a{ color:#72767d; font-size:0.85rem; font-weight:600; transition: color 0.3s; }
+.footer-links a:hover{ color:#1abc9c; }
+
+.skip-link{
+  position:absolute;
+  left:8px;
+  top:-48px;
+  background:#1abc9c;
+  color:#0a0e17;
+  padding:8px 12px;
+  border-radius:6px;
+  z-index:9999;
+  font-weight:600;
+}
+.skip-link:focus{ top:8px; }
+button:focus, a:focus, input:focus, textarea:focus, select:focus{
+  outline:3px solid rgba(26,188,156,0.3);
+  outline-offset:2px;
+}
+
+/* Mobile ke liye responsive banaya hai */
+@media (max-width: 768px){
+  .header-container{ padding:10px 15px; }
+  nav{ display:none; }
+  .menu-icon{ display:block; }
+
+  .hero-section{ padding:100px 20px 60px; min-height:auto; }
+  .hero-section h1{ font-size:2rem; }
+  .hero-section .subtitle{ font-size:1rem; }
+
+  .cta-section h2{ font-size:1.8rem; }
+
+  .features-grid{ gap:40px; }
+  .feature-item{ flex-direction:column !important; }
+  .feature-image{ min-width:100%; }
+
+  .contact-container{ flex-direction:column; }
+  .contact-info-section{ width:100%; }
+
+  .profile-content{ flex-direction:column; margin-top:20px; }
+  .profile-left{ width:100%; }
+
+  .hero-buttons{ flex-direction:column; width:100%; }
+  .btn-download, .btn-open{ width:100%; text-align:center; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .features-grid{ grid-template-columns:1fr; }
+}
+
+/* Print karne ke liye */
+@media print{
+  header, footer, .hero-buttons, .btn-primary, .menu-icon{ display:none; }
+  body{ background:#fff; color:#000; }
+  .hero-section, .features-section{ background:#fff; color:#000; }
+}
+
+
+
+
