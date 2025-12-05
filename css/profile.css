@@ -1,0 +1,165 @@
+/* profile page styles */
+
+.profile-header {
+    background: linear-gradient(135deg, #1abc9c 0%, #3498db 100%);
+    padding: 100px 20px 40px;
+    text-align: center;
+}
+
+.profile-avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #151920;
+    color: #1abc9c;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border: 4px solid #ffffff;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.profile-bio {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+.profile-meta {
+    color: #d0d0d0;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.profile-content {
+    max-width: 1200px;
+    margin: -60px auto 40px;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.profile-left {
+    width: 300px;
+}
+
+.profile-right {
+    flex: 1;
+}
+
+.stats-card,
+.badges-card,
+.activity-card {
+    background: #151920;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.stats-card h3,
+.badges-card h3,
+.activity-card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1abc9c;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #b9bbbe;
+}
+
+.badges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.badge {
+    background: #1e2329;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.activity-item,
+.project-item {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.activity-item:last-child,
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.activity-text {
+    color: #b9bbbe;
+    margin-bottom: 5px;
+}
+
+.activity-link {
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #1e2329;
+    color: #1abc9c;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(26, 188, 156, 0.3);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .profile-left {
+        width: 100%;
+    }
+}

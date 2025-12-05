@@ -1,0 +1,51 @@
+/* about page styles */
+
+/* full page background */
+body.about-page {
+    background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* dark overlay */
+body.about-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 14, 23, 0.85);
+    z-index: -1;
+}
+
+/* spacing */
+.about-page main {
+    padding-top: 100px;
+}
+
+/* mission section */
+.mission-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(21, 25, 32, 0.8);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mission-section h2 {
+    color: #1abc9c;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    color: #1abc9c;
+    margin-bottom: 20px;
+}

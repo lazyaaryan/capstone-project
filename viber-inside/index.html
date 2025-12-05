@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viber Social</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="x-container">
+        <!-- left sidebar -->
+        <nav class="left-sidebar">
+            <div class="logo">VIBER</div>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span>Notifications</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span>Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="tweet-btn">Post</button>
+
+            <div class="user-profile">
+                <img src="images/newton.jpg" alt="Newton" class="user-avatar">
+                <div class="user-details">
+                    <span class="user-name">Newton Dev</span>
+                    <span class="user-handle">@newtondev</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main feed -->
+        <main class="main-feed">
+            <div class="feed-header">
+                <h1 class="feed-title">Home</h1>
+            </div>
+
+            <div class="feed-tabs">
+                <div class="feed-tab active">For you</div>
+                <div class="feed-tab">Following</div>
+            </div>
+
+            <div class="tweet-box">
+                <div class="user-avatar">AD</div>
+                <div style="flex: 1;">
+                    <textarea class="tweet-input" placeholder="What's on your mind?"></textarea>
+                    <div class="tweet-actions">
+                        <button class="post-tweet-btn">Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tweet 1 -->
+            <div class="tweet">
+                <img src="images/modi.jpg" alt="User" alt="User" class="tweet-avatar">
+                <div class="tweet-content">
+                    <div class="tweet-header">
+                        <span class="tweet-author">Narendra Modi</span>
+                        <span class="tweet-handle">@narendramodi</span>
+                        <span class="tweet-time">2h</span>
+                    </div>
+                    <div class="tweet-text">
+                        Just shipped a major update to our app! The new authentication system is finally live. Big
+                        thanks to the team for making this happen.
+                    </div>
+                    <img src="images/image post.jpeg" alt="Post image" class="tweet-image">
+                    <div class="tweet-actions-bar">
+                        <button class="tweet-action like-btn">
+                            <span class="action-icon">♡</span>
+                            <span class="like-count">234</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tweet 2 with image -->
+            <div class="tweet">
+                <img src="images/rahul.webp" alt="User" class="tweet-avatar">
+                <div class="tweet-content">
+                    <div class="tweet-header">
+                        <span class="tweet-author">Rahul Gandhi</span>
+                        <span class="tweet-handle">@rahulgandhi</span>
+                        <span class="tweet-time">4h</span>
+                    </div>
+                    <div class="tweet-text">
+                        Morning coffee and code session
+                    </div>
+                    <div class="tweet-actions-bar">
+                        <button class="tweet-action like-btn">
+                            <span class="action-icon">♡</span>
+                            <span class="like-count">156</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tweet 3 - long post -->
+            <div class="tweet">
+                <img src="images/elon.webp" alt="User" class="tweet-avatar">
+                <div class="tweet-content">
+                    <div class="tweet-header">
+                        <span class="tweet-author">Elon Musk</span>
+                        <span class="tweet-handle">@elonmusk</span>
+                        <span class="tweet-time">6h</span>
+                    </div>
+                    <div class="tweet-text truncated">After years of development, I've learned that the best code isn't
+                        the most clever code – it's the code that's easiest for your team to understand and maintain.
+                        Write for humans first, computers second. Documentation isn't optional, it's essential. Tests
+                        aren't a burden, they're your safety net. And refactoring isn't technical debt, it's regular
+                        maintenance.</div>
+                    <button class="show-more-btn">Show more</button>
+                    <div class="tweet-actions-bar">
+                        <button class="tweet-action like-btn">
+                            <span class="action-icon">♡</span>
+                            <span class="like-count">567</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tweet 4 -->
+            <div class="tweet">
+                <img src="images/mark.webp" alt="User" alt="User" class="tweet-avatar">
+                <div class="tweet-content">
+                    <div class="tweet-header">
+                        <span class="tweet-author">Mark Zuckerberg</span>
+                        <span class="tweet-handle">@zuck</span>
+                        <span class="tweet-time">8h</span>
+                    </div>
+                    <div class="tweet-text">
+                        Hot take: CSS is actually amazing and more people should appreciate the incredible things you
+                        can do with modern CSS. Grid, Flexbox, Custom Properties... we're living in the golden age!
+                    </div>
+                    <div class="tweet-actions-bar">
+                        <button class="tweet-action like-btn">
+                            <span class="action-icon">♡</span>
+                            <span class="like-count">445</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tweet 5 with image -->
+            <div class="tweet">
+                <img src="images/images.webp" alt="User" class="tweet-avatar">
+                <div class="tweet-content">
+                    <div class="tweet-header">
+                        <span class="tweet-author">Virat Kohli</span>
+                        <span class="tweet-handle">@virat.kohli</span>
+                        <span class="tweet-time">12h</span>
+                    </div>
+                    <div class="tweet-text">
+                        Finally finished this coding challenge! Proud moment
+                    </div>
+                    <img src="images/image post 2.jpeg" alt="Post image" class="tweet-image">
+                    <div class="tweet-actions-bar">
+                        <button class="tweet-action like-btn">
+                            <span class="action-icon">♡</span>
+                            <span class="like-count">289</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- right sidebar -->
+        <aside class="right-sidebar">
+            <button class="dark-mode-toggle">Dark Mode</button>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="widget">
+                <div class="widget-header">Trends for you</div>
+                <div class="widget-item">
+                    <div class="trend-category">Trending in Technology</div>
+                    <div class="trend-name">#ReactJS</div>
+                    <div class="trend-count">45.2K posts</div>
+                </div>
+                <div class="widget-item">
+                    <div class="trend-category">Trending in Programming</div>
+                    <div class="trend-name">#100DaysOfCode</div>
+                    <div class="trend-count">23.8K posts</div>
+                </div>
+                <div class="widget-item">
+                    <div class="trend-category">Trending</div>
+                    <div class="trend-name">#WebDev</div>
+                    <div class="trend-count">67.5K posts</div>
+                </div>
+                <div class="show-more">Show more</div>
+            </div>
+
+            <div class="widget">
+                <div class="widget-header">Who to follow</div>
+                <div class="follow-item">
+                    <div class="follow-user">
+                        <img src="images/sundar pichai.webp" alt="Sundar Pichai" class="follow-avatar">
+                        <div class="follow-info">
+                            <span class="follow-name">Sundar Pichai</span>
+                            <span class="follow-handle">@sundarpichai</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-item">
+                    <div class="follow-user">
+                        <img src="images/satyanedla.jpeg" alt="Satya Nadella" class="follow-avatar">
+                        <div class="follow-info">
+                            <span class="follow-name">Satya Nadella</span>
+                            <span class="follow-handle">@satyanadella</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-item">
+                    <div class="follow-user">
+                        <img src="images/arwindkejriwal.webp" alt="Arvind Kejriwal" class="follow-avatar">
+                        <div class="follow-info">
+                            <span class="follow-name">Arvind Kejriwal</span>
+                            <span class="follow-handle">@arvindkejriwal</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="show-more">Show more</div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
